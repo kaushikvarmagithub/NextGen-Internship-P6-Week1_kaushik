@@ -4,7 +4,6 @@ import '../styles/login.css'
 import { Button, Col, Container, Form, FormGroup, Row } from 'reactstrap'
 import { Link } from 'react-router-dom'
 
-import loginImg from '../assets/images/login.png'
 import userIcon from '../assets/images/user.png'
 
 
@@ -24,14 +23,11 @@ const Login = () => {
   }
 
   return (
-<section>
+<section id="login_background">
   <Container>
     <Row>
       <Col lg='8' className='m-auto'>
-        <div className="login__container d-flex justify-content-between">
-          <div className="login__img">
-            <img src={loginImg} alt="login" />
-          </div>
+        <div className="login__container d-flex justify-content-between ">
 
           <div className="login__form">
             <div className="user">
@@ -50,7 +46,7 @@ const Login = () => {
               <Button className="btn secondary__btn auth__btn"
               type='submit'>Login</Button>
             </Form>
-            <p>Don't have an account ? <Link to='/register'>Create</Link></p>
+            <p id='login-p'>Don't have an account ? <Link to='/register'>Create</Link></p>
           </div>
         </div>
       </Col>
